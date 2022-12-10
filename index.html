@@ -10,40 +10,18 @@
 </head>
 <body>
 
-    <div class="container">
+    <!-- <div class="container">
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <a class="navbar-brand me-6" href="#" id="titleHead">FLATDANGO</a>
           </div>
         </nav>
-    </div>
+    </div> -->
 
     <nav class="navbar bg-dark">
         <div class="container-fluid text-bg-dark">
+            <a class="navbar-brand text-light">FLATDANGO</a>
 
-<!--
-            <div class="dropdown-center">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="film-list">
-                  SHOWING FILMS
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Action two</a></li>
-                  <li><a class="dropdown-item" href="#">Action three</a></li>
-                </ul>
-              </div> -->
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </div>
 
 
             <form class="d-flex">
@@ -55,10 +33,27 @@
         </div>
     </nav>
 
+
+
     <div class="container mt-5" id="main-container">
         <div class="row" id="film-details">
             <div class="row mt-3" id="">
-                <div class="card col-10">
+
+
+                <div  class="card col-4">
+
+
+
+                    <div>
+                        <ul  id = "showingMovie">
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="card col-8">
                     <h4 class="card-title" id="filmTitle">Django Unchained</h4>
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Film details" id="poster">
                     <p id="movieDescription">Lorem ipsum she said its not available to do what she wants to do when she has to</p>
@@ -66,7 +61,7 @@
                         <li id="runtime">Runtime: 108 minutes</li>
                         <li id="showtime">Showtime: 04:16PM</li>
                         <li id="ticketsAvailable">Available Tickets 67</li>
-                        <button type="button" class="btn btn-warning">Buy Ticket</button>
+                        <button type="button" class="btn btn-warning" id="buyTicket">Buy Ticket</button>
                     </ul>
 
 
@@ -78,6 +73,8 @@
 
 
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> -->
     <script type="text/javascript" src="js/index.js"></script>
 
 </body>
