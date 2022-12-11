@@ -31,7 +31,7 @@ https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/
 
 * You can buy a ticket by clicking on the buy button.
 
-* A `sold out` budge will be displayed next to the movies title in the movie list menu when its sold out and a user cant buy tickets anymore.
+* A `sold out` budge will be displayed next to the movies title in the movie list menu when its sold out and a user can't buy tickets anymore.
 
 #### Author
  This Project was contributed by: [Kimathi Njoki](https://github.com/kimathinjoki/)
