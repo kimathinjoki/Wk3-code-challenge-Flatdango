@@ -23,12 +23,18 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
             const ticketBuy = document.getElementById("buyTicket")
+            let tickets = Number(firstMovie.capacity - firstMovie.tickets_sold)
+
             ticketBuy.addEventListener('click',()=>{
-                const tickets = Number(firstMovie.capacity - firstMovie.tickets_sold)
-                const ticketRemaining = tickets-1
-                availTicket.innerText = `Tickets available: ${ticketRemaining}`
-                if(ticketRemaining === 0){
+
+                tickets--
+
+                // const ticketRemaining = tickets-1
+
+                if(tickets <= 0){
                     return availTicket.innerText = "SOLD OUT"
+                }else{
+                    availTicket.innerText = `Tickets available: ${tickets}`
                 }
             })
 
@@ -72,18 +78,26 @@ document.addEventListener('DOMContentLoaded',()=>{
                     availTickets.innerText =`Tickets available: (${item.capacity - item.tickets_sold})`
 
                     const ticketsBuy = document.getElementById("buyTicket")
+                    let ticket = Number(item.capacity - item.tickets_sold)
 
                     ticketsBuy.addEventListener('click',()=>{
-                        let ticket = Number(item.capacity - item.tickets_sold)
-                        // const ticketRemain = ticket-1
-                        ticket -= 1
-                        while(ticket> -1){
-                            availTickets.innerText = `Tickets available: ${ticket}`
-                            if(ticket === 0){
-                                return availTickets.innerText = "SOLD OUT"
-                            }
 
+                        // const ticketRemain = ticket-1
+                        ticket --
+                        if(ticket <= 0){
+                            return availTickets.innerText = "Tickets available: SOLD OUT"
+
+                        }else{
+                            return availTickets.innerText = `Tickets available: ${ticket}`
                         }
+                        // availTickets.innerText = `Tickets available: ${ticket}`
+                        // while(ticket> -1){
+                        //     availTickets.innerText = `Tickets available: ${ticket}`
+                        //     if(ticket === 0){
+                        //         return availTickets.innerText = "SOLD OUT"
+                        //     }
+
+                        // }
 
 
 
