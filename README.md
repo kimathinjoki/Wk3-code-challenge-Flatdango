@@ -23,9 +23,9 @@ A user should be able to:
 * Web browser of you choice
 
 #### Running
-* Run the following [link](url) through your broswer;
+* Run the following [link](urhttps://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/) through your broswer;
 ```
-the link
+https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/
 ```
 * Click on a movie title to see the movie title, showtime, movie runtime, the movie title and available tickets.
 
