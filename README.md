@@ -23,7 +23,7 @@ A user should be able to:
 * Web browser of you choice
 
 #### Running
-* Run the following [link](urhttps://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/) through your broswer;
+* Run the following [link](https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/) through your broswer;
 ```
 https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/
 ```
