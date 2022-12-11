@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Flatdango</title>
 </head>
+
 <body>
 
     <!-- <div class="container">
@@ -19,18 +21,27 @@
     </div> -->
 
     <nav class="navbar bg-dark">
-        <div class="container-fluid text-bg-dark">
-            <a class="navbar-brand text-light">FLATDANGO</a>
+        <div class="container-fluid text-bg-dark d-flex justify-content-center">
+            <h2 class="text-light" id="headTitle">FLATDANGO</h2>
 
 
 
-            <form class="d-flex">
+
+
+
+            <!-- <form class="d-flex">
                 <input class="form-control" type="text" placeholder="search movie title" id="search">
                 <button class="btn btn-outline-info ms-1" id="searchBtn">SEARCH</button>
 
-            </form>
+            </form> -->
 
         </div>
+
+        <div class="container-fluid text-bg-dark d-flex justify-content-center">
+            <!-- <a class="navbar-brand text-light">FLATDANGO</a> -->
+            <h4 class="text-light" id="descript">For The Love Of Movies</h4>
+        </div>
+
     </nav>
 
 
@@ -40,12 +51,19 @@
             <div class="row mt-3" id="">
 
 
-                <div  class="card col-4">
+                <div class="card col-4">
 
 
 
                     <div>
-                        <ul  id = "showingMovie">
+                        <h2 id="showingTitle">MOVIES SHOWING</h2>
+                        <ul class="list-group" id="showingMovie">
+
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul id="soldOut">
 
                         </ul>
                     </div>
@@ -55,14 +73,19 @@
 
                 <div class="card col-8">
                     <h4 class="card-title" id="filmTitle">Django Unchained</h4>
-                    <img class="card-img-top" src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Film details" id="poster">
-                    <p id="movieDescription">Lorem ipsum she said its not available to do what she wants to do when she has to</p>
-                    <ul>
-                        <li id="runtime">Runtime: 108 minutes</li>
-                        <li id="showtime">Showtime: 04:16PM</li>
-                        <li id="ticketsAvailable">Available Tickets 67</li>
-                        <button type="button" class="btn btn-warning" id="buyTicket">Buy Ticket</button>
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="Film details" id="poster">
+                    <p id="movieDescription">Lorem ipsum she said its not available to do what she wants to do when she
+                        has to</p>
+
+                    <ul class="d-flex justify-content-center me-2" id="mviedet">
+                        <li class="border border-success rounded me-2"  id="runtime"><span class="border-success me-2">Runtime:</span> 108 minutes</li>
+                        <li class="border border-success rounded me-2" id="showtime">Showtime: 04:16PM</li>
+                        <li class="border border-success rounded me-2" id="ticketsAvailable">Available Tickets 67</li>
                     </ul>
+
+                    <button type="button" class="btn btn-warning" id="buyTicket">Buy Ticket</button>
 
 
                 </div>
@@ -78,4 +101,5 @@
     <script type="text/javascript" src="js/index.js"></script>
 
 </body>
+
 </html>
