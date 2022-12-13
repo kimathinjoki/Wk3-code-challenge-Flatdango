@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             const availTicket =document.getElementById("ticketsAvailable")
             filmImg.src = firstMovie.poster
             movieTitle.innerText = firstMovie.title
-            movieDescr.textContent = firstMovie.decription
+            movieDescr.innerText = firstMovie.description
             runningTime.innerText =`Runtime: ${firstMovie.runtime} minutes`
             showingTime.innerText =`Showtime: ${firstMovie.showtime}`
             availTicket.innerText =`Tickets Available: (${firstMovie.capacity - firstMovie.tickets_sold})`
@@ -61,9 +61,10 @@ document.addEventListener('DOMContentLoaded',()=>{
                 const movieList = document.createElement("li")
                 const list = document.getElementById("showingMovie")
 
-                movieList.classList.add("list-group-item", "border", "border-info")
+                movieList.classList.add("list-group-item", "border", "border-info", "sinema")
 
                 movieList.setAttribute('id',`${item.id}`)
+                // movieList.className = "sinema"
                 movieList.innerText = item.title
                 console.log(item.title)
 
@@ -81,7 +82,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
                     filmImage.src = item.poster
                     filmTitle.innerText = item.title
-                    filmDescr.textContent = item.decription
+                    filmDescr.innerText = item.description
                     runTime.innerHTML =`Runtime:<span>${item.runtime}</span>`
                     showTime.innerText =`Showtime: ${item.showtime}`
                     availTickets.innerText =`Tickets available: (${item.capacity - item.tickets_sold})`
