@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         fetch(url)
         .then(res =>res.json())
         .then(content =>{
-            console.log(content)
             const firstMovie = content.films[0]
 
             const filmImg = document.getElementById("poster")
@@ -55,8 +54,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         fetch(url)
         .then(response=>response.json())
         .then(data=>{
+            const filmData = data.films
             console.log(filmData)
-            const filmData = filmData.films[0]
             for(let i = 0; i < filmData.length; i++){
                 let item = filmData[i]
                 console.log(item)
