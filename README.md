@@ -20,10 +20,31 @@ A user should be able to:
 * Buy a ticket of the movie.
 
 #### Requirements
-* Web browser of you choice
+* An IDE of choice preferably Visual Studio
+* Web browser of choice preferably Chrome
+* Node js
+* Json server
 
 #### Running
-* Run the following [link](https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/) through your broswer;
+
+* To get the local database running:
+    * Git clone this repository to your local machine
+    ```
+    git@github.com:kimathinjoki/Wk3-code-challenge-Flatdango.git
+    ```
+    * Open the local file using your IDE of choice
+    * Open the terminal and install npm:
+    ```
+    npm install
+    ```
+    * Watch the local server by running the following in the terminal:
+    ```
+    json-server --watch db.json
+    ```
+    * If you don't have json-server installed globally into your local machine. Run ``npm i -g json-server`` before running the watch server command.
+
+
+* Run the following [link](https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/) through your broswer to view the app;
 ```
 https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/
 ```
