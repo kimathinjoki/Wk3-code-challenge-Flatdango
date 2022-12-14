@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/films"
+const url = "https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/db.json"
 
 document.addEventListener('DOMContentLoaded',()=>{
 
@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         fetch(url)
         .then(res =>res.json())
         .then(content =>{
-            const firstMovie = content[0]
+            console.log(content)
+            const firstMovie = content.films[0]
 
             const filmImg = document.getElementById("poster")
             const movieTitle = document.getElementById("filmTitle")
@@ -54,9 +55,10 @@ document.addEventListener('DOMContentLoaded',()=>{
         fetch(url)
         .then(response=>response.json())
         .then(data=>{
-            console.log(data)
-            for(let i = 0; i < data.length; i++){
-                let item = data[i]
+            console.log(filmData)
+            const filmData = filmData.films[0]
+            for(let i = 0; i < filmData.length; i++){
+                let item = filmData[i]
                 console.log(item)
                 const movieList = document.createElement("li")
                 const list = document.getElementById("showingMovie")
